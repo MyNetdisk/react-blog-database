@@ -1,0 +1,3 @@
+# 忽略当前目录
+/node_modules
+package-lock.json
