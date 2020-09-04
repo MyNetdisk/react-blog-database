@@ -6,4 +6,4 @@ COPY setup.sh /mysql/setup.sh
 COPY react_blog.sql /mysql/react_blog.sql
 COPY privileges.sql /mysql/privileges.sql
 #设置容器启动时执行的命令
-CMD ["sh", "/mysql/setup.sh"]
+CMD ["sh", "./docker/docker.sh"]
