@@ -14,4 +14,4 @@ COPY ./docker/privileges.sql /mysql/privileges.sql
 EXPOSE 3306
 
 # 设置容器启动时执行的命令
-CMD ["sh", "./docker/docker.sh"]
+CMD ["sh", "./mysql/docker.sh"]
