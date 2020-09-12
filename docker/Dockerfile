@@ -8,9 +8,6 @@ COPY ./docker/docker.sh /mysql/docker.sh
 COPY ./docker/react_blog.sql /mysql/react_blog.sql
 COPY ./docker/privileges.sql /mysql/privileges.sql
 
-# 本地持久化的mysql
-# VOLUME ["/var/lib/mysql"]
-
 EXPOSE 3306
 
 # 设置容器启动时执行的命令
