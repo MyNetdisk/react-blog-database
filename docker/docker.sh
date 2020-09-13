@@ -14,8 +14,6 @@ echo `service mysql status`
 echo '2.开始导入数据....'
 sed -i 's/ADMIN_USER_NAME/'$ADMIN_USER_NAME'/' /mysql/react_blog.sql
 sed -i 's/ADMIN_USER_PASSWORD/'$ADMIN_USER_PASSWORD'/' /mysql/react_blog.sql
-echo $ADMIN_USER_NAME
-echo $ADMIN_USER_PASSWORD
 mysql < /mysql/react_blog.sql
 echo '3.导入数据完毕....'
 
