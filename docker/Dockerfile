@@ -5,7 +5,7 @@ ENV MYSQL_ALLOW_EMPTY_PASSWORD yes
 
 #将所需文件放到容器中
 COPY ./docker/docker.sh /mysql/docker.sh
-COPY ./docker/react_blog.sql /mysql/react_blog.sql
+COPY ./docker/blogs.sql /mysql/blogs.sql
 COPY ./docker/privileges.sql /mysql/privileges.sql
 
 EXPOSE 3306

@@ -5,9 +5,9 @@
 /*!40101 SET NAMES utf8 */;
 
 # 创建数据库
-create database `react_blog` default character set utf8 collate utf8_general_ci;
+create database `blogs` default character set utf8 collate utf8_general_ci;
 
-use react_blog;
+use blogs;
 
 #
 # Structure for table "admin_user"

@@ -12,9 +12,9 @@ echo `service mysql status`
 
 #导入数据
 echo '2.开始导入数据....'
-sed -i 's/ADMIN_USER_NAME/'$ADMIN_USER_NAME'/' /mysql/react_blog.sql
-sed -i 's/ADMIN_USER_PASSWORD/'$ADMIN_USER_PASSWORD'/' /mysql/react_blog.sql
-mysql < /mysql/react_blog.sql
+sed -i 's/ADMIN_USER_NAME/'$ADMIN_USER_NAME'/' /mysql/blogs.sql
+sed -i 's/ADMIN_USER_PASSWORD/'$ADMIN_USER_PASSWORD'/' /mysql/blogs.sql
+mysql < /mysql/blogs.sql
 echo '3.导入数据完毕....'
 
 sleep 3
