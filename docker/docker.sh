@@ -12,8 +12,8 @@ echo `service mysql status`
 
 #导入数据
 echo '2.开始导入数据....'
-sed -i 's/ADMIN_USER_NAME/'$ADMIN_USER_NAME'/' /mysql/blogs.sql
-sed -i 's/ADMIN_USER_PASSWORD/'$ADMIN_USER_PASSWORD'/' /mysql/blogs.sql
+# sed -i 's/ADMIN_USER_NAME/'$ADMIN_USER_NAME'/' /mysql/blogs.sql
+# sed -i 's/ADMIN_USER_PASSWORD/'$ADMIN_USER_PASSWORD'/' /mysql/blogs.sql
 mysql < /mysql/blogs.sql
 echo '3.导入数据完毕....'
 
@@ -22,7 +22,7 @@ echo `service mysql status`
 
 #重新设置mysql密码
 echo '4.开始修改密码....'
-sed -i 's/MYSQL_ROOT_PASSWORD/'$MYSQL_ROOT_PASSWORD'/' /mysql/privileges.sql
+# sed -i 's/MYSQL_ROOT_PASSWORD/'$MYSQL_ROOT_PASSWORD'/' /mysql/privileges.sql
 mysql < /mysql/privileges.sql
 echo '5.修改密码完毕....'
 

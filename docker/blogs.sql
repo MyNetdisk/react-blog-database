@@ -26,7 +26,7 @@ CREATE TABLE `admin_user` (
 #
 
 /*!40000 ALTER TABLE `admin_user` DISABLE KEYS */;
-INSERT INTO `admin_user` VALUES (1,"ADMIN_USER_NAME","ADMIN_USER_PASSWORD");
+INSERT INTO `admin_user` VALUES (1,"admin","123456");
 /*!40000 ALTER TABLE `admin_user` ENABLE KEYS */;
 
 #
