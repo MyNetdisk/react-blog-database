@@ -10,8 +10,8 @@ service mysql start
 sleep 3
 echo `service mysql status`
 
-#导入数据
 echo '2.开始导入数据....'
+#导入数据
 sed -i 's/ADMIN_USER_NAME/'$ADMIN_USER_NAME'/' /mysql/blogs.sql
 sed -i 's/ADMIN_USER_PASSWORD/'$ADMIN_USER_PASSWORD'/' /mysql/blogs.sql
 mysql < /mysql/blogs.sql
