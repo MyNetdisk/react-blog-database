@@ -7,9 +7,9 @@ ENV ADMIN_USER_NAME="admin"
 ENV ADMIN_USER_PASSWORD="123456"
 
 #将所需文件放到容器中
-COPY ./docker/docker.sh /mysql/docker.sh
-COPY ./docker/blogs.sql /mysql/blogs.sql
-COPY ./docker/privileges.sql /mysql/privileges.sql
+COPY ./docker.sh /mysql/docker.sh
+COPY ./blogs.sql /mysql/blogs.sql
+COPY ./privileges.sql /mysql/privileges.sql
 
 EXPOSE 3306
 
