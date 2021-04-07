@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2021-04-07 13:45:21
+-- 生成日期： 2021-04-07 18:16:27
 -- 服务器版本： 10.4.14-MariaDB
 -- PHP 版本： 7.4.10
 
@@ -21,10 +21,10 @@ SET time_zone = "+00:00";
 -- 数据库： `blogs`
 --
 
-SET NAMES UTF8;
-DROP DATABASE IF EXISTS blogs;
-CREATE DATABASE blogs CHARSET=UTF8;
-USE blogs;
+SET NAMES UTF8;
+DROP DATABASE IF EXISTS blogs;
+CREATE DATABASE blogs CHARSET=UTF8;
+USE blogs;
 
 -- --------------------------------------------------------
 
