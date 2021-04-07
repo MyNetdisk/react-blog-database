@@ -21,7 +21,6 @@ SET time_zone = "+00:00";
 -- 数据库： `blogs`
 --
 
-SET NAMES UTF8;
 DROP DATABASE IF EXISTS blogs;
 CREATE DATABASE blogs CHARSET=UTF8;
 USE blogs;
