@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2021-04-07 13:37:52
+-- 生成日期： 2021-04-07 13:45:21
 -- 服务器版本： 10.4.14-MariaDB
 -- PHP 版本： 7.4.10
 
@@ -75,25 +75,7 @@ INSERT INTO `comment` (`id`, `content`, `article_id`, `article_title`, `comment_
 (2, '简直是太好笑了[可爱]', 1, 'Debain 8环境安装git', NULL, 1, 'zeal', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/1.jpg', 0, '2020-06-17 17:40:25', 0),
 (3, '@zeal 这么巧，你也在测试评论吗？[可爱]', 1, 'Debain 8环境安装git', 2, 2, 'Tina', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/2.jpg', 0, '2020-06-17 23:48:15', 0),
 (4, '@zeal 这么巧，你也在测试评论吗？[可爱]', 1, 'Debain 8环境安装git', 2, 2, 'Tina', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/2.jpg', 0, '2020-06-17 23:48:15', 0),
-(5, '写得不错哦[牛皮]', 1, '解决Mac OS 升级后npm报错', NULL, 1274223115459620865, 'visitor', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/3.jpg', 0, '2020-06-20 18:51:46', 0),
-(6, 'dADds[冷笑][酷][憨笑]DDDSA', 1, '自学编程 vs 参加培训', NULL, NULL, '哈哈哈', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/1.jpg', NULL, '2021-03-09 18:30:36', NULL),
-(7, '但是发放 [憨笑][憨笑][舔][舔]无可奈何花落去', 1, '自学编程 vs 参加培训', NULL, NULL, '我是', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/1.jpg', NULL, '2021-03-09 18:32:49', NULL),
-(8, '我是你爸爸[大笑][冷笑][牛皮][舔]儿子\n', 1, '自学编程 vs 参加培训', NULL, NULL, 'hello', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/1.jpg', NULL, '2021-03-10 17:55:35', NULL),
-(9, '哈哈哈[大笑][可爱][酷]卢萨卡', 2, '关键对话', NULL, NULL, '哈哈哈', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/1.jpg', NULL, '2021-03-10 17:58:39', NULL),
-(10, '哈哈哈[酷][牛皮][吐]嘿', 2, '关键对话', NULL, NULL, '我是', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/1.jpg', NULL, '2021-03-10 18:00:41', NULL),
-(11, '哈啊哈哈哈[冷笑][冷笑]卢萨卡', 2, '关键对话', NULL, NULL, '小明', 'https://images.mynetdisk.vercel.app/react-blogs/avator/1.jpg', NULL, '2021-03-10 18:18:00', NULL),
-(12, '基材厅', 2, '关键对话', NULL, NULL, '小张', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/1.jpg', NULL, '2021-03-10 18:18:32', NULL),
-(13, '[哭][憨笑][憨笑][舔]斯塔克豪斯', 2, '关键对话', NULL, NULL, '小王', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/1.jpg', NULL, '2021-03-10 18:20:05', NULL),
-(14, '基材在', 2, '关键对话', NULL, NULL, '小周', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/1.jpg', NULL, '2021-03-10 18:24:58', NULL),
-(15, '模压[哭]', 2, '关键对话', NULL, NULL, '小石', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/3.jpg', NULL, '2021-03-10 18:26:41', NULL),
-(16, '项城无可奈何苦[舔]', 2, '关键对话', NULL, NULL, '小明', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/2.jpg', NULL, '2021-03-10 18:27:41', NULL),
-(17, '斯塔基要', 2, '关键对话', NULL, NULL, '小明', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/1.jpg', NULL, '2021-03-10 18:28:10', NULL),
-(18, '项城要', 2, '关键对话', NULL, NULL, '哈哈哈af', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/3.jpg', NULL, '2021-03-10 18:28:26', NULL),
-(19, '项城要', 2, '关键对话', NULL, NULL, '哈哈哈af', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/3.jpg', NULL, '2021-03-10 18:28:29', NULL),
-(20, '和你哦啊发送大家[牛皮][吐][憨笑]', 2, '关键对话', NULL, NULL, '小王', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/2.jpg', NULL, '2021-03-10 18:30:47', NULL),
-(21, '[大笑][可爱][牛皮]', 3, '采用 Github Action 自动化部署博客', NULL, NULL, '小王', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/8.jpg', NULL, '2021-03-10 18:47:37', NULL),
-(22, '哈哈哈哈[难过][疑问]', 3, '采用 Github Action 自动化部署博客', NULL, NULL, '小明', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/5.jpg', NULL, '2021-03-10 18:58:44', NULL),
-(23, 'helhe[色]ddd', 1, '自学编程 vs 参加培训', NULL, NULL, '哈哈哈', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/13.jpg', NULL, '2021-03-14 13:41:55', NULL);
+(5, '写得不错哦[牛皮]', 1, '解决Mac OS 升级后npm报错', NULL, 1274223115459620865, 'visitor', 'https://images.mynetdisk.vercel.app/react-blogs/avatar/3.jpg', 0, '2020-06-20 18:51:46', 0);
 
 -- --------------------------------------------------------
 
