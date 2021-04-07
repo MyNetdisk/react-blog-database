@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2021-04-01 09:00:21
+-- 生成日期： 2021-04-07 13:37:52
 -- 服务器版本： 10.4.14-MariaDB
 -- PHP 版本： 7.4.10
 
@@ -34,6 +34,7 @@ CREATE TABLE `admin_user` (
   `email` varchar(64) DEFAULT NULL COMMENT '邮箱',
   `avatar` varchar(1024) DEFAULT NULL COMMENT '头像',
   `introduction` varchar(255) DEFAULT NULL COMMENT '简介',
+  `role` varchar(32) NOT NULL COMMENT '角色',
   `register_date` datetime DEFAULT NULL COMMENT '注册时间',
   `last_password_reset_date` date DEFAULT NULL COMMENT '最后修改密码时间'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -42,8 +43,8 @@ CREATE TABLE `admin_user` (
 -- 转存表中的数据 `admin_user`
 --
 
-INSERT INTO `admin_user` (`Id`, `userName`, `passWord`, `email`, `avatar`, `introduction`, `register_date`, `last_password_reset_date`) VALUES
-(1, 'MyNetdisk', 'ADMIN_USER_PASSWORD', NULL, 'https://images.mynetdisk.vercel.app/react-blogs/avatar/avatar.jpg', '分享知识，记录生活。', NULL, NULL);
+INSERT INTO `admin_user` (`Id`, `userName`, `passWord`, `email`, `avatar`, `introduction`, `role`, `register_date`, `last_password_reset_date`) VALUES
+(1, 'MyNetdisk', 'ADMIN_USER_PASSWORD', NULL, 'https://images.mynetdisk.vercel.app/react-blogs/avatar/avatar.jpg', '分享知识，记录生活。', 'ROLE_ADMIN', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -227,10 +228,10 @@ CREATE TABLE `role` (
 --
 
 INSERT INTO `role` (`id`, `name`, `value`, `description`, `is_del`, `create_date`, `update_date`) VALUES
-(1040542528560377900, '系统管理员', 'ROLE_ADMIN', '管理员身份，拥有所有权限', 0, '2018-09-14 18:01:23', '2020-08-14 09:06:26'),
-(1040542528560377901, '作者', 'ROLE_EDITOR', '编辑者身份，可发表文章', 0, '2019-04-12 17:53:52', '2020-06-20 14:00:04'),
-(1040542528560377902, '用户', 'ROLE_USER', '用户访客身份，可评论点赞收藏', 0, '2019-04-12 17:54:37', '2020-06-20 14:00:11'),
-(1274221803410026498, '体验者', 'ROLE_EXPERIENCER', '体验网站功能', 0, '2020-06-20 14:05:26', '2020-06-20 14:07:50');
+(1, '系统管理员', 'ROLE_ADMIN', '管理员身份，拥有所有权限', 0, '2018-09-14 18:01:23', '2020-08-14 09:06:26'),
+(2, '作者', 'ROLE_EDITOR', '编辑者身份，可发表文章', 0, '2019-04-12 17:53:52', '2020-06-20 14:00:04'),
+(3, '用户', 'ROLE_USER', '用户访客身份，可评论点赞收藏', 0, '2019-04-12 17:54:37', '2020-06-20 14:00:11'),
+(4, '体验者', 'ROLE_EXPERIENCER', '体验网站功能', 0, '2020-06-20 14:05:26', '2020-06-20 14:07:50');
 
 -- --------------------------------------------------------
 
@@ -410,7 +411,7 @@ ALTER TABLE `user`
 -- 使用表AUTO_INCREMENT `admin_user`
 --
 ALTER TABLE `admin_user`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键', AUTO_INCREMENT=2;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键', AUTO_INCREMENT=4;
 
 --
 -- 使用表AUTO_INCREMENT `comment`
