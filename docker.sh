@@ -12,12 +12,12 @@ echo `service mysql status`
 
 #判断是否初始化数据，如果初始化了，直接启动。
 echo '2.开始导入数据....'
-# if [ ! -d /var/lib/mysql/blogs ] ; then
+if [ ! -d /var/lib/mysql/blogs ] ; then
     #导入数据
     sed -i 's/ADMIN_USER_NAME/'$ADMIN_USER_NAME'/' /mysql/blogs.sql
     sed -i 's/ADMIN_USER_PASSWORD/'$ADMIN_USER_PASSWORD'/' /mysql/blogs.sql
     mysql < /mysql/blogs.sql
-# fi
+fi
 
 echo '3.导入数据完毕....'
 
