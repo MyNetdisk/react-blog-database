@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 -- 数据库： `blogs`
 --
 
-create database `blogs` default character set utf8 collate utf8_general_ci;
-use blogs;
+create database `blogs` default character set utf8 collate utf8_general_ci;
+use blogs;
 
 -- --------------------------------------------------------
 
