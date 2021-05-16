@@ -171,11 +171,11 @@ CREATE TABLE `posts` (
   `title` varchar(255) NOT NULL DEFAULT '' COMMENT '标题',
   `article_content` text CHARACTER SET utf8mb4 NOT NULL COMMENT '内容',
   `introduce` text DEFAULT NULL COMMENT '副标题',
-  `addTime` int(20) DEFAULT current_timestamp() COMMENT '创建时间',
+  `addTime` int(20) DEFAULT NULL COMMENT '创建时间',
   `view_count` int(11) NOT NULL DEFAULT 0 COMMENT '阅读数量',
   `cover_image` varchar(1024) DEFAULT NULL COMMENT '封面图片',
   `author_id` bigint(20) DEFAULT NULL COMMENT '作者编号',
-  `update_date` int(20) DEFAULT current_timestamp() COMMENT '更新时间',
+  `update_date` int(20) DEFAULT NULL COMMENT '更新时间',
   `label` varchar(64) DEFAULT NULL COMMENT '标签'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='文章表' ROW_FORMAT=DYNAMIC;
 --
